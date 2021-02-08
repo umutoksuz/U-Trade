@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:text="Stock "/>
+
+                <TextView
+                    android:id="@+id/stock_buy_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"
+                    android:text="AAPL "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:text="Price "/>
+
+                <EditText
+                    android:id="@+id/stock_buy_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorText"
+                    android:inputType="numberDecimal"
+                    android:backgroundTint="@color/colorText"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:text="Amount "/>
+
+                <EditText
+                    android:id="@+id/stock_buy_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorText"
+                    android:inputType="number"
+                    android:backgroundTint="@color/colorText"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:text="Position "/>
+
+                <Spinner
+                    android:id="@+id/stock_buy_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/colorText"
+                    android:backgroundTint="@color/colorText"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:text="Leverage "/>
+
+                <Spinner
+                    android:id="@+id/stock_buy_leverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+
+                    android:foregroundTint="@color/colorText"
+                    android:textColor="@color/colorText"
+                    android:backgroundTint="@color/colorText"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:text="Date To "/>
+
+                <EditText
+                    android:id="@+id/stock_buy_date"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundTint="@color/colorText"
+                    android:textColor="@color/colorText"
+                    android:backgroundTint="@color/colorText"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/stock_buy_submit"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Order"
+                android:background="#ffaa00"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/stock_buy_status"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/colorText"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

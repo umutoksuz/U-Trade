@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">U-Trade</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">My Portfolio</string>
+    <string name="menu_slideshow">Available Offers</string>
+    <string name="menu_tools">Profile</string>
+    <string name="menu_share">Sign In</string>
+    <string name="menu_send">Sign Up</string>
+    
+    <string-array name="leverage_options">
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+    </string-array>
+    <string-array name="position_options">
+        <item>Long</item>
+        <item>Short</item>
+    </string-array>
+</resources>
