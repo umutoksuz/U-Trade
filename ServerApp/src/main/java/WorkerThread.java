@@ -28,7 +28,7 @@ public class WorkerThread implements Runnable{
 
             BjpResponse response = Router.routeRequest(request);
 
-            Thread.sleep(100);
+           // Thread.sleep(100);
 
             PrintWriter writer = new PrintWriter(out, true);
             writer.println(response.getContent());
